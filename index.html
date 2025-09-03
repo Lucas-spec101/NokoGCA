@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Try Noko IRL — RSVP</title>
+<meta name="description" content="RSVP for Try Noko IRL, a sparkling drink pop-up." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<main class="card" role="main" aria-labelledby="page-title">
+<div class="sparkles" aria-hidden="true"></div>
+
+
+<header>
+<div class="logo" aria-hidden="true">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M12 2l2.1 4.9L19 9l-4.9 2.1L12 16l-2.1-4.9L5 9l4.9-2.1L12 2z" fill="white"/>
+</svg>
+</div>
+<h1 id="page-title">Try Noko IRL</h1>
+<p class="lede">Pop by our sparkling drink pop‑up to sip limited flavors, vote for your favorite, and snag early access perks. RSVP below to get on the list.</p>
+</header>
+
+
+<form action="#" method="post" autocomplete="on" novalidate>
+<div class="field">
+<label for="name">Full name</label>
+<input id="name" name="name" type="text" inputmode="text" placeholder="Alex Rivera" required aria-required="true" autocomplete="name" />
+</div>
+
+
+<div class="field">
+<label for="email">Email</label>
+<input id="email" name="email" type="email" placeholder="alex@email.com" required aria-required="true" autocomplete="email" />
+</div>
+
+
+<button type="submit" aria-label="Submit RSVP">RSVP</button>
+<p class="note" id="privacy">We’ll only use your info for event updates. No spam, ever.</p>
+</form>
+
+
+<footer>
+<span class="sr-only">Noko Sparkling Beverages</span>
+© <span id="year"></span> Noko. All rights reserved.
+</footer>
+</main>
+
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
